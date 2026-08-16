@@ -17,7 +17,7 @@ mkdir -p "$destination"
 
 installed=0
 
-for skill_dir in "$tmp_dir/agent-skills"/*; do
+for skill_dir in "$tmp_dir/agent-skills/skills"/*; do
   [ -d "$skill_dir" ] || continue
   [ -f "$skill_dir/SKILL.md" ] || continue
 

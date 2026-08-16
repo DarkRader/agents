@@ -11,6 +11,17 @@ Included skills:
 - `skill-creator`
 - `teach`
 
+Repository layout:
+
+```text
+skills/
+├── create-agentsmd/
+├── handoff/
+├── proofreader/
+├── skill-creator/
+└── teach/
+```
+
 ## Install Globally
 
 The installer clones this repository into a temporary directory, copies only
@@ -42,27 +53,14 @@ For example:
 curl -fsSL https://raw.githubusercontent.com/DarkRader/agents/main/scripts/install-skills.sh | sh -s -- https://github.com/DarkRader/agents.git "$HOME/.codex/skills"
 ```
 
-## Install Script
-
-The script is also available locally:
-
-```sh
-sh scripts/install-skills.sh
-```
-
-It accepts an optional repository URL and destination:
-
-```sh
-sh scripts/install-skills.sh [repository-url] [destination]
-```
-
 ## Add a Skill
 
-Create a top-level directory with a required `SKILL.md`:
+Create a directory under `skills/` with a required `SKILL.md`:
 
 ```text
-my-skill/
-└── SKILL.md
+skills/
+└── my-skill/
+    └── SKILL.md
 ```
 
 Supporting files can be placed beside `SKILL.md`; the installer copies the
