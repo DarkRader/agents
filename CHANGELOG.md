@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/DarkRader/agents/compare/v0.1.0...v0.1.1) (2026-08-23)
+
+
+### ⚙️ DevOps & CI/CD
+
+* **build:** add validate and publish skills workflow to skills.sh ([b2617ec](https://github.com/DarkRader/agents/commit/b2617ecb3aad11e3fb1d7fc69b019f5586ff1953))
+
 ## [0.1.0](https://github.com/DarkRader/agents/compare/v0.0.1...v0.1.0) (2026-08-17)
 
 
