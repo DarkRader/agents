@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/DarkRader/agents/compare/v0.1.2...v0.1.3) (2026-08-23)
+
+
+### ⚙️ DevOps & CI/CD
+
+* **build:** fix publish to skills.sh ([1978c38](https://github.com/DarkRader/agents/commit/1978c38ecc6906843d7aabdfe7f76dc90907fd61))
+
 ## [0.1.2](https://github.com/DarkRader/agents/compare/v0.1.1...v0.1.2) (2026-08-23)
 
 
