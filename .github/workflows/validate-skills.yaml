@@ -1,15 +1,15 @@
 name: Validate Skills
 
 on:
-  pull_request:
-    paths:
-      - "skills/**"
+  # pull_request:
+  #   paths:
+  #     - "skills/**"
   push:
     branches:
       - main
-      - release-please--branches--main
-    paths:
-      - "skills/**"
+      # - release-please--branches--main
+    # paths:
+    #   - "skills/**"
 
 permissions:
   contents: read

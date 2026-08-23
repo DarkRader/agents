@@ -12,14 +12,9 @@ separate upload destination. This repository is discoverable as:
 npx skills add DarkRader/agents
 ```
 
-The `Validate Skills` GitHub Action checks every pull request and every change
-to `main` with the Agent Skills validator. To publish a version, run the
-`Publish Skills` workflow from the GitHub Actions tab and provide a semver tag,
-such as `v1.0.0`. It validates the skills, adds the `agent-skills` repository
-topic, and creates a GitHub release.
+The `Validate Skills` GitHub Action checks every pull request and every change to `main` with the Agent Skills validator. Release Please creates versioned GitHub releases for users who want to pin a skill version.
 
-Use one release workflow for a given version. If you publish with `Publish
-Skills`, do not also create the same release through Release Please.
+There is no separate upload operation to `skills.sh`; public GitHub repositories are the source of published skills. The optional `agent-skills` repository topic can be added manually with `gh repo edit --add-topic agent-skills`.
 
 Published versions can be pinned when users install a skill:
 
