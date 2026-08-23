@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/DarkRader/agents/compare/v0.1.1...v0.1.2) (2026-08-23)
+
+
+### ⚙️ DevOps & CI/CD
+
+* **build:** fix publish ([ed05ab4](https://github.com/DarkRader/agents/commit/ed05ab4e235d535103caab0200c2ae985346aab2))
+
 ## [0.1.1](https://github.com/DarkRader/agents/compare/v0.1.0...v0.1.1) (2026-08-23)
 
 
