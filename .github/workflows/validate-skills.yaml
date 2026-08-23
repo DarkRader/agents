@@ -1,0 +1,25 @@
+name: Validate Skills
+
+on:
+  pull_request:
+    paths:
+      - "skills/**"
+  push:
+    branches:
+      - main
+      - release-please--branches--main
+    paths:
+      - "skills/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Validate Agent Skills
+        run: gh skill publish --dry-run

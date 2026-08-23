@@ -3,6 +3,38 @@
 Reusable skills for AI agents. A skill is a directory containing a `SKILL.md`
 file and optional supporting files.
 
+## Publish on skills.sh
+
+Skills on `skills.sh` are sourced from public GitHub repositories; there is no
+separate upload destination. This repository is discoverable as:
+
+```text
+npx skills add DarkRader/agents
+```
+
+The `Validate Skills` GitHub Action checks every pull request and every change
+to `main` with the Agent Skills validator. To publish a version, run the
+`Publish Skills` workflow from the GitHub Actions tab and provide a semver tag,
+such as `v1.0.0`. It validates the skills, adds the `agent-skills` repository
+topic, and creates a GitHub release.
+
+Use one release workflow for a given version. If you publish with `Publish
+Skills`, do not also create the same release through Release Please.
+
+Published versions can be pinned when users install a skill:
+
+```sh
+npx skills add DarkRader/agents --skill proofreader
+```
+
+To validate locally, install a current GitHub CLI and run:
+
+```sh
+gh skill publish --dry-run
+```
+
+The repository can also be opened directly at `https://skills.sh/DarkRader/agents` after it has been indexed.
+
 Included skills:
 
 - `create-agentsmd`
